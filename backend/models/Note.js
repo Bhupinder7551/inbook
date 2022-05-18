@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const {Schema}= mongoose;
 const NotesSchema = new Schema({
+  // just like a foreign key get user name from another table
   user:{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user'
